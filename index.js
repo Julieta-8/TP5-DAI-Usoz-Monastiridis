@@ -1,0 +1,65 @@
+const express = require("express");
+const app = express();
+
+app.use(express.static("public"));
+
+app.get("/pokemon/:nombre", async (req, res) => {
+  const nombre = req.params.nombre;
+
+    const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${nombre}`);
+     if (!response.ok) {
+    return res.status(404).json({
+  error: "Pokémon no encontrado",
+  imagen: "error-404.png"
+});
+  }
+   
+    const data = await response.json();
+    res.json(data);
+});
+
+
+
+  app.use((req, res) => {
+  res.status(404).send(`
+    <h1>Error 404 - Ruta no encontrada</h1>
+    <img src="error-404.png">
+  `);
+})
+   
+  app.use((req, res) => {
+  res.status(500).send(`
+    <h1>Error 500 - Error del servidor</h1>
+    <img src="https://http.cat/500" alt="500 cat">
+  `);
+})
+   
+
+
+app.listen(3000, () => {
+  console.log("Servidor corriendo en http://localhost:3000");
+});
+
+/*import express from "express";
+import cors from "cors";
+import { horaActual, FehcaActual } from "./time.js";
+
+const app = express();
+app.use(cors());
+app.use(express.json());
+
+app.get("/", (req, res) => {
+  res.send("Bienvenido");
+});
+
+app.get("/horaActual", (req, res) => {
+  res.send(horaActual());
+});
+
+app.use((req, res) => {
+  res.status(404).send(`
+    <h1>Error 404 - Ruta no encontrada</h1>
+    <img src="https://http.cat/404" alt="404 cat">
+  `);
+});
+export default app;*/

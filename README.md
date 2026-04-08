@@ -20,3 +20,6 @@ If you are developing a production application, we recommend using TypeScript wi
 -Gracias al materia de fetch de facilitó la implementación de este, sin embrago, las dificultades vienen desde react 
 
 "# TP5-DAI-Usoz-Monastiridis" 
+
+
+//Dificultades: Se nos dificultò establecer un mensaje de error ya que el codigo seguìa teniendo el mensaje "cargando" porque, apesar de no encontrar el pokemon, el codigo estaba establecido para siempre dar el ok. Una vez solucionado, quisimos insertar imagenes que coincidieran con la respuesta

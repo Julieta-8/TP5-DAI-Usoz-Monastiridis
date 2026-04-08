@@ -1,0 +1,24 @@
+{
+  "name": "tp5-dai-usoz-monastiridis",
+  "version": "1.0.0",
+  "description": "This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.",
+  "homepage": "https://github.com/Julieta-8/TP5-DAI-Usoz-Monastiridis#readme",
+  "bugs": {
+    "url": "https://github.com/Julieta-8/TP5-DAI-Usoz-Monastiridis/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Julieta-8/TP5-DAI-Usoz-Monastiridis.git"
+  },
+  "license": "ISC",
+  "author": "Usoz-Monastiridis",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
