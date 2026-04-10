@@ -13,12 +13,16 @@ if (!res.ok) {
    <img src="${data.imagen}">`;
   return;
 }
+   const w = data.weight
    
+   const h = data.height
     contenedor.innerHTML = `
       <h2>${data.name}</h2>
       <img src="${data.sprites.front_default}"   >
       <p>Tipos: ${data.types.map(t => t.type.name).join(", ")}</p>
-    `;
+       <p>${data.weight}</p>
+<p>${data.height}</p>
+      `;
 
    
   
