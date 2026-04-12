@@ -22,4 +22,6 @@ If you are developing a production application, we recommend using TypeScript wi
 "# TP5-DAI-Usoz-Monastiridis" 
 
 
-//Dificultades: Se nos dificultò establecer un mensaje de error ya que el codigo seguìa teniendo el mensaje "cargando" porque, apesar de no encontrar el pokemon, el codigo estaba establecido para siempre dar el ok. Una vez solucionado, quisimos insertar imagenes que coincidieran con la respuesta
+//Dificultades: Aparte de establecer una estructura, se nos dificultò establecer un mensaje de error ya que el codigo seguìa teniendo el mensaje "cargando" porque, apesar de no encontrar el pokemon, el codigo estaba establecido para siempre dar el ok. Una vez solucionado, quisimos insertar imagenes que coincidieran con la respuesta y integrar un diseño que coincida con la estètica
+//Decisiones: Como decisiones, se optó por utilizar un backend intermedio para manejar las solicitudes y los posibles errores, devolver las respuestas en formato JSON para facilitar su procesamiento
+//Estructura: El proyecto se estructura en un backend desarrollado con Node y Express, encargado de gestionar las rutas y consumir la API externa utilizando async/await, y un frontend construido con HTML, CSS y JavaScript
