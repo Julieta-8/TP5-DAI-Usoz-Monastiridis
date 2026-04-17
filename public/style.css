@@ -2,43 +2,37 @@
   font-family: "Pokemon";
   src: url("font/Pokemon\ Hollow.ttf");
 }
-body{
-    background-image: url(fondo.jpg);
-    background-repeat: no-repeat;
-     background-position: center;
-
+body {
+  background-image: url(fondo.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
-  height: 100vh;
+
+  min-height: 100vh; /* 👈 clave */
   display: flex;
-  /*justify-content: center;
-  align-items: center;*/
-    
-    
 }
-section{
+section {
   border: 3px solid yellow;
-    background-color: blue;
-     padding: 30px;
+  background-color: blue;
+  opacity: 70%;
+  padding: 30px;
   border-radius: 15px;
   width: 40%;
   text-align: center;
   box-shadow: 0 10px 25px rgba(0,0,0,0.3);
-    margin: 10%;
-    padding: 2%;
-    padding-left: 5%;
-    padding-right: 5%;
-    margin-left: -15%;
-    margin-right: 70%;
+
+  margin: 10% auto; /* centra */
+  height: auto;     /* IMPORTANTE */
 }
 section h1{
     font-family: "Pokemon";
     color: rgb(255, 208, 0);
-    margin-left: 6%;
+    margin-left: 8%;
 }
 .titulo{
     font-family: "Pokemon";
-    width: 100%;
-      margin-left: 45%;
+
+     
       font-size: 55px;
     color: rgb(255, 0, 0);
    
@@ -47,7 +41,7 @@ input{
     margin:5%;
     padding: 2%;
     border-radius: 20px;
-    margin-left: 10%;
+    margin-left: 20%;
     margin-right: 20%;
 }
 button{
@@ -55,7 +49,7 @@ button{
     font-family: "Pokemon";
     color: blue;
     border: none;
-     margin-left: 35%;
+     margin-left: 22%;
     margin-right: 25%;
     border-radius: 30px;
     padding: 1%;
@@ -77,8 +71,6 @@ img{
   width: 120px;
   margin: 10px 0;
 }
-
-/* Texto */
 #resultado h2 {
   text-transform: capitalize;
   margin-bottom: 10px;
@@ -89,7 +81,6 @@ img{
   font-size: 14px;
 }
 
-/* Error */
 #resultado p {
   color: #ffe600;
 }
@@ -98,7 +89,7 @@ img{
   color: #ffe600;
 }
 
-/* Loading */
+
 #resultado:empty::before {
   content: "Buscá un Pokémon...";
   color: #ff0000;}
